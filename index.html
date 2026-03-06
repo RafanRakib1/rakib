@@ -71,38 +71,38 @@ nav.s{padding:12px var(--pad);background:rgba(4,6,15,.9);backdrop-filter:blur(20
 #mn a:hover{color:var(--c)}
 
 /* ─── HERO ─── */
-#hero{position:relative;z-index:1;min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr) 300px;align-items:center;gap:clamp(40px,6vw,80px);padding:clamp(90px,14vh,130px) clamp(40px,7vw,100px) clamp(40px,6vh,70px);overflow:hidden}
+#hero{position:relative;z-index:1;min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(24px,3vw,48px);padding:clamp(90px,14vh,130px) clamp(24px,4vw,56px) clamp(40px,6vh,70px);overflow:hidden}
 .h-bg{position:absolute;inset:0;background:radial-gradient(ellipse 55% 70% at 40% 50%,rgba(155,109,255,.12),transparent 60%),radial-gradient(ellipse 45% 50% at 80% 30%,rgba(0,240,255,.08),transparent 55%);pointer-events:none}
-.hcon{position:relative;z-index:2;min-width:0;max-width:620px}
+.hcon{position:relative;z-index:2;min-width:0}
 /* Pill */
-.h-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(0,240,255,.07);border:1px solid rgba(0,240,255,.2);border-radius:100px;font-family:var(--fm);font-size:.64rem;color:var(--c);letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;opacity:0;transform:translateY(12px);transition:.5s}
+.h-tag{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;background:rgba(0,240,255,.07);border:1px solid rgba(0,240,255,.2);border-radius:100px;font-family:var(--fm);font-size:.75rem;color:var(--c);letter-spacing:.14em;text-transform:uppercase;margin-bottom:20px;opacity:0;transform:translateY(12px);transition:.5s}
 .h-tag.in{opacity:1;transform:none}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--c);flex-shrink:0;animation:pu 2s ease-in-out infinite}
 @keyframes pu{0%,100%{box-shadow:0 0 0 0 rgba(0,240,255,.5)}50%{box-shadow:0 0 0 7px transparent}}
 /* Name */
-.hname{font-family:var(--ff);font-size:clamp(3.5rem,8vw,7.5rem);line-height:.9;letter-spacing:.01em;color:#fff;margin-bottom:6px}
+.hname{font-family:var(--ff);font-size:clamp(4rem,8.5vw,9rem);line-height:.88;letter-spacing:.01em;color:#fff;margin-bottom:8px}
 .hln{display:block;overflow:hidden}
 .hln span{display:block;transform:translateY(110%);transition:transform .9s cubic-bezier(.16,1,.3,1)}
 .hln span.in{transform:none}
 .cy{background:linear-gradient(135deg,var(--c),var(--v));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 /* Role */
-.hrole{font-family:var(--fm);font-size:clamp(.8rem,1.4vw,1rem);color:#b89eff;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;opacity:0;transform:translateY(10px);transition:.5s .25s}
+.hrole{font-family:var(--fm);font-size:clamp(.9rem,1.6vw,1.15rem);color:#b89eff;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px;opacity:0;transform:translateY(10px);transition:.5s .25s}
 .hrole.in{opacity:1;transform:none}
 /* Desc */
-.hdesc{font-size:clamp(1rem,1.5vw,1.1rem);color:rgba(220,225,240,.85);max-width:500px;line-height:1.78;font-weight:300;margin-bottom:24px;min-height:44px;opacity:0;transform:translateY(10px);transition:.5s .38s}
+.hdesc{font-size:clamp(1rem,1.6vw,1.2rem);color:rgba(220,225,240,.85);max-width:100%;line-height:1.8;font-weight:300;margin-bottom:28px;min-height:44px;opacity:0;transform:translateY(10px);transition:.5s .38s}
 .hdesc.in{opacity:1;transform:none}
 /* Buttons */
 .hbtns{display:flex;gap:10px;flex-wrap:wrap;opacity:0;transform:translateY(10px);transition:.5s .5s}
 .hbtns.in{opacity:1;transform:none}
-.bcta{padding:11px 26px;background:linear-gradient(135deg,var(--v),var(--c));color:#04060f;font-family:var(--fm);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-radius:var(--r);cursor:none;transition:box-shadow .3s,transform .3s;position:relative;overflow:hidden}
+.bcta{padding:14px 32px;background:linear-gradient(135deg,var(--v),var(--c));color:#04060f;font-family:var(--fm);font-size:.82rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-radius:var(--r);cursor:none;transition:box-shadow .3s,transform .3s;position:relative;overflow:hidden}
 .bcta::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.22),transparent);transform:translateX(-100%);transition:.45s}
 .bcta:hover::before{transform:translateX(100%)}.bcta:hover{box-shadow:0 0 40px rgba(155,109,255,.4);transform:translateY(-2px)}
-.bout{padding:11px 26px;border:1px solid var(--rim);color:var(--tx);font-family:var(--fm);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;border-radius:var(--r);cursor:none;transition:border-color .25s,color .25s,transform .25s}
+.bout{padding:14px 32px;border:1px solid var(--rim);color:var(--tx);font-family:var(--fm);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;border-radius:var(--r);cursor:none;transition:border-color .25s,color .25s,transform .25s}
 .bout:hover{border-color:var(--c);color:var(--c);transform:translateY(-2px)}
-.bgh{padding:11px 18px;border:1px solid var(--rim);color:var(--mu);font-family:var(--fm);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;border-radius:var(--r);cursor:none;display:inline-flex;align-items:center;gap:7px;transition:border-color .25s,color .25s,transform .25s}
+.bgh{padding:14px 22px;border:1px solid var(--rim);color:var(--mu);font-family:var(--fm);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;border-radius:var(--r);cursor:none;display:inline-flex;align-items:center;gap:8px;transition:border-color .25s,color .25s,transform .25s}
 .bgh:hover{border-color:var(--v);color:var(--v);transform:translateY(-2px)}
 /* Hero right panel */
-.hvis{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:18px;flex-shrink:0;opacity:0;transform:translateX(30px);transition:.8s .45s}
+.hvis{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;opacity:0;transform:translateX(30px);transition:.8s .45s}
 .hvis.in{opacity:1;transform:none}
 .av-w{position:relative;width:260px;height:260px;display:flex;align-items:center;justify-content:center}
 .av-gl{position:absolute;inset:-28px;border-radius:50%;background:radial-gradient(circle,rgba(0,240,255,.22),transparent 70%);animation:gl 3s ease-in-out infinite}
